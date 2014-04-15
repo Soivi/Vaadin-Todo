@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# Build timeTue Apr 08 09:39:52 EEST 2014
+
+CACHE:
+../../../VAADIN/themes/touchkit/styles.css
+../../../VAADIN/vaadinBootstrap.js
+650109D413E2C231EC22108817C9E71A.cache.woff
+6AE53A7EF3D3D36B9C9FA9839F0BB715.cache.js
+clear.cache.gif
+com.example.tokka.gwt.AppWidgetSet.devmode.js
+com.example.tokka.gwt.AppWidgetSet.nocache.js
+deferredjs/6AE53A7EF3D3D36B9C9FA9839F0BB715/1.cache.js
+deferredjs/6AE53A7EF3D3D36B9C9FA9839F0BB715/2.cache.js
+deferredjs/6AE53A7EF3D3D36B9C9FA9839F0BB715/3.cache.js
+deferredjs/6AE53A7EF3D3D36B9C9FA9839F0BB715/4.cache.js
+deferredjs/6AE53A7EF3D3D36B9C9FA9839F0BB715/5.cache.js
+deferredjs/6AE53A7EF3D3D36B9C9FA9839F0BB715/6.cache.js
+deferredjs/6AE53A7EF3D3D36B9C9FA9839F0BB715/7.cache.js
+deferredjs/6AE53A7EF3D3D36B9C9FA9839F0BB715/8.cache.js
+deferredjs/6AE53A7EF3D3D36B9C9FA9839F0BB715/9.cache.js
+
+NETWORK:
+*
+
