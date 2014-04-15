@@ -20,6 +20,16 @@ public class MenuView extends NavigationView {
                 getNavigationManager().navigateTo(new FormView());                
             }
         });
+        
+        NavigationButton addButton = new NavigationButton("Add");
+        addButton.addClickListener(new NavigationButtonClickListener() {
+            @Override
+            public void buttonClick(NavigationButtonClickEvent event) {
+                getNavigationManager().navigateTo(new AddView());                
+            }
+        });
+        
+        content.addComponent(addButton);
         content.addComponent(button);
         setContent(content);
     };
