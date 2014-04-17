@@ -29,7 +29,7 @@ public class MyTouchKitUI extends UI {
         TouchKitIcon.book.addTo(tab);
         tab = tabBarView.addTab(new Label("Tab 2"), "Edit");
         TouchKitIcon.edit.addTo(tab);
-        tab = tabBarView.addTab(new AddView(), "Add");
+        tab = tabBarView.addTab(new AddListView(), "Add");
         TouchKitIcon.download.addTo(tab);
         setContent(tabBarView);
     }
