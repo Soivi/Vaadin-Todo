@@ -45,4 +45,8 @@ public class TodoList {
 		}
 		return doneCount;
 	}
+	
+	public Todo getTodo(int i) {
+		return this.todoArray.get(i);
+	}
 }

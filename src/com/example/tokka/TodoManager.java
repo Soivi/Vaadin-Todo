@@ -10,9 +10,6 @@ public class TodoManager {
 		
 		TodoList shoppingList = new TodoList("Shopping List");
 		shoppingList.addTodo(new Todo("apple"));
-		Todo todo = new Todo("auto");
-		todo.setDone(true);
-		shoppingList.addTodo(todo);
 		shoppingList.addTodo(new Todo("milk"));
 		shoppingList.addTodo(new Todo("meat"));
 		shoppingList.addTodo(new Todo("rice"));

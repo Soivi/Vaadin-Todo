@@ -37,6 +37,7 @@ public class EditListView extends NavigationView {
 		final TextField txf = new TextField();
 		txf.setInputPrompt("New List");
 		Button addButton = new Button("Add");
+		TouchKitIcon.plusSign.addTo(addButton);
 		addButton.addClickListener(new ClickListener() {
             @Override
             public void buttonClick(ClickEvent event) {
@@ -55,7 +56,7 @@ public class EditListView extends NavigationView {
 			final int e = i;
 			TodoList todoList = todolists.get(i);
 			Button button = new Button(todoList.getListname());
-			TouchKitIcon.minusSign.addTo(button);
+			TouchKitIcon.removeSign.addTo(button);
 			content.addComponent(button);
 			button.addClickListener(new ClickListener() {
 				@Override
@@ -66,10 +67,4 @@ public class EditListView extends NavigationView {
 			});
 		}
 	}
-	
-    @Override
-    protected void onBecomingVisible() {
-        super.onBecomingVisible();
-		updatelist();
-    }
 }

@@ -19,10 +19,7 @@ public class MenuView extends NavigationView {
 
 	public MenuView() {
 		setCaption("Menu");
-
-
 		TodoManager.Initialize();
-
 		updatelist();
 		
 		/*
@@ -58,14 +55,20 @@ public class MenuView extends NavigationView {
 		for (int i = 0; i < todolists.size(); i++) {
 			TodoList todoList = todolists.get(i);
 			
-			NavigationButton button = new NavigationButton(todoList.getListname() + " " + Integer.toString(todoList.getDoneTodos()) + "/" + Integer.toString(todoList.getSize()));
+			final NavigationButton button = new NavigationButton(todoList.getListname() + " " + Integer.toString(todoList.getDoneTodos()) + "/" + Integer.toString(todoList.getSize()));
+			button.setData(todoList);
+			button.addClickListener(new NavigationButtonClickListener() {
+				@Override
+				public void buttonClick(NavigationButtonClickEvent event) {
+					getNavigationManager().navigateTo(new EditTodoView((TodoList)button.getData()));
+				}
+			});
 			content.addComponent(button);
 		}
 	}
 	
     @Override
     protected void onBecomingVisible() {
-        super.onBecomingVisible();
 		updatelist();
     }
 }

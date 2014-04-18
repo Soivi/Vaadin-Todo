@@ -22,15 +22,15 @@ public class MyTouchKitUI extends UI {
     protected void init(VaadinRequest request) {
         final TabBarView tabBarView = new TabBarView();
         final NavigationManager navigationManager = new NavigationManager();
-        navigationManager.setCaption("View");
+        navigationManager.setCaption("All");
         navigationManager.setCurrentComponent(new MenuView());
         Tab tab; 
         tab = tabBarView.addTab(navigationManager);
-        TouchKitIcon.book.addTo(tab);
-        tab = tabBarView.addTab(new Label("Tab 2"), "Edit");
-        TouchKitIcon.edit.addTo(tab);
-        tab = tabBarView.addTab(new AddListView(), "Add");
-        TouchKitIcon.download.addTo(tab);
+        TouchKitIcon.star.addTo(tab);
+        tab = tabBarView.addTab(new Label("Tab 2"), "Todo");
+        TouchKitIcon.checkEmpty.addTo(tab);
+        tab = tabBarView.addTab(new AddListView(), "Checked");
+        TouchKitIcon.check.addTo(tab);
         setContent(tabBarView);
     }
 }
