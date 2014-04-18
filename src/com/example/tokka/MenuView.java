@@ -58,8 +58,14 @@ public class MenuView extends NavigationView {
 		for (int i = 0; i < todolists.size(); i++) {
 			TodoList todoList = todolists.get(i);
 			
-			NavigationButton button = new NavigationButton(todoList.getListname());
+			NavigationButton button = new NavigationButton(todoList.getListname() + " " + Integer.toString(todoList.getDoneTodos()) + "/" + Integer.toString(todoList.getSize()));
 			content.addComponent(button);
 		}
 	}
+	
+    @Override
+    protected void onBecomingVisible() {
+        super.onBecomingVisible();
+		updatelist();
+    }
 }

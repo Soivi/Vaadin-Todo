@@ -31,4 +31,18 @@ public class TodoList {
 		this.todoArray.add(todo);
 	}
 	
+	public int getSize() {
+		return this.todoArray.size();
+	}
+	
+	public int getDoneTodos() {
+		int doneCount = 0;
+		for (int i = 0; i < todoArray.size(); i++) {
+			Todo todo = todoArray.get(i);
+			if(todo.isDone()) {
+				doneCount++;
+			}
+		}
+		return doneCount;
+	}
 }

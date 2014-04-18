@@ -66,4 +66,10 @@ public class EditListView extends NavigationView {
 			});
 		}
 	}
+	
+    @Override
+    protected void onBecomingVisible() {
+        super.onBecomingVisible();
+		updatelist();
+    }
 }

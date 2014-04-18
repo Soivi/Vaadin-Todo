@@ -7,8 +7,21 @@ public class TodoManager {
 	
 	static void Initialize() {
 		todolists = new ArrayList<TodoList>();
-		todolists.add(new TodoList("Shopping List"));
+		
+		TodoList shoppingList = new TodoList("Shopping List");
+		shoppingList.addTodo(new Todo("apple"));
+		Todo todo = new Todo("auto");
+		todo.setDone(true);
+		shoppingList.addTodo(todo);
+		shoppingList.addTodo(new Todo("milk"));
+		shoppingList.addTodo(new Todo("meat"));
+		shoppingList.addTodo(new Todo("rice"));
+		shoppingList.addTodo(new Todo("juice"));
+		
+		todolists.add(shoppingList);
 		todolists.add(new TodoList("Work todo"));
+		
+		
 	}
 	
 	static ArrayList<TodoList> getTodoLists() {
